@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000; // You can change the port as needed
 
 app.use(express.json())
-app.post('/mpesa', (req, res) => {
+app.post('/dropoffpay', (req, res) => {
   console.log('Received callback from Safaricom:', req.body); // Log the received data
   res.status(200).send('Callback received successfully.'); // Send a response to Safaricom
 });
